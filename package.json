@@ -1,0 +1,30 @@
+{
+  "name": "webcrawlerhttp",
+  "version": "1.0.0",
+  "description": "first test http web crawler",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitink840/webcrawlerhttp.git"
+  },
+  "keywords": [
+    "http",
+    "json",
+    "node",
+    "jest",
+    "webcrawler"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitink840/webcrawlerhttp/issues"
+  },
+  "homepage": "https://github.com/nitink840/webcrawlerhttp#readme",
+  "devDependencies": {
+    "jest": "^29.4.2"
+  }
+}
