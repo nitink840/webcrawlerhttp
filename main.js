@@ -1,4 +1,6 @@
 const {crawlPage} =  require('./src/crawl');
+const {sortPages,printReport} =  require('./src/printReport');
+
 async function main() {
     if(process.argv.length <3){
         console.log("No argument provided!"); 
@@ -12,9 +14,8 @@ async function main() {
     console.log(`Started Crawling ${baseUrl}...`)
 
     const pages = await crawlPage(baseUrl,baseUrl,{});
-    for (const page of Object.entries(pages)) {
-        console.log(page)
-    }
+    const sortedPages = sortPages(pages)
+    printReport(sortedPages)
 }
 
 main();
